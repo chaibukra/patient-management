@@ -152,7 +152,7 @@ The project demonstrates how modern cloud-native systems are designed, developed
 
 ```bash
 git clone <repository-url>
-cd patient-management-platform
+cd patient-management
 ```
 
 ### 2. Create .env (upload to github for esay dev testing)
