@@ -4,6 +4,16 @@ A production-like microservices platform built with Spring Boot, Spring Cloud Ga
 
 The project demonstrates how modern cloud-native systems are designed, developed, tested, containerized and deployed using industry-standard technologies.
 
+## 🛠️ Development & Architecture Notes
+
+### Repository Upload Structure
+Please note that this project was developed independently as an architectural benchmark. To provide a holistic view of the system's design and structural patterns from day one, the codebase was uploaded in a single, consolidated commit rather than incremental feature branches. 
+
+### Local Environment Configuration
+A `.env` file has been intentionally included in the repository root for development purposes only. 
+* **Zero Secrets:** No sensitive production data, private keys, or actual API secrets are contained within this file.
+* **Instant Spin-up:** It contains basic local environment variables configured strictly to allow automated tools, peer reviewers, and developers to `git clone` the repository and run `docker-compose up` immediately without manual setup friction.
+* 
 ---
 
 ## Architecture
