@@ -1,3 +1,6 @@
 # Project exclude paths
 /infrastructure/target/
 /integration-tests/target/
+.env
+.env.*
+!.env.example
