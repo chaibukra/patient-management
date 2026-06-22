@@ -10,10 +10,12 @@ The project demonstrates how modern cloud-native systems are designed, developed
 Please note that this project was developed independently as an architectural benchmark. To provide a holistic view of the system's design and structural patterns from day one, the codebase was uploaded in a single, consolidated commit rather than incremental feature branches. 
 
 ### Local Environment Configuration
-A `.env` file has been intentionally included in the repository root for development purposes only. 
-* **Zero Secrets:** No sensitive production data, private keys, or actual API secrets are contained within this file.
-* **Instant Spin-up:** It contains basic local environment variables configured strictly to allow automated tools, peer reviewers, and developers to `git clone` the repository and run `docker-compose up` immediately without manual setup friction.
-* 
+A `.env.example` file is included to simplify local development.
+
+- No production secrets are stored in the repository.
+- Copy `.env.example` to `.env`.
+- Replace placeholder values if needed.
+- Run `docker compose up --build` and the platform will start without additional configuration.
 ---
 
 ## Architecture
@@ -166,7 +168,13 @@ cd patient-management
 ```
 
 ### 2. Create .env (upload to github for esay dev testing)
+2. Create .env from the example
 
+```
+cp .env.example .env
+```
+
+or create env with this:
 ```env
 AUTH_DB_NAME=auth-service-db
 AUTH_DB_USER=admin_user
